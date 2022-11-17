@@ -1,13 +1,31 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>DragdropToPdfPoc</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+  <script src="https://formbuilder.online/assets/js/form-builder.min.js"></script>
 </head>
+
 <body>
+  <div class="app-bar">
+    Drag-Drop Form & Save PDF - PoC
+  </div>
+  <div class="content">
+  <div id="fbeditor" #fbeditor></div>
+  <script>
+    jQuery(function($) {
+      $(document.getElementById('fbeditor')).formBuilder();
+    });
+    </script>
   <app-root></app-root>
+</div>
 </body>
+
 </html>
